@@ -14,7 +14,7 @@ export function Hero() {
       description: "Explore nossa nova coleção de streetwear com designs exclusivos que expressam sua personalidade urbana.",
     },
     {
-      image: "https://images.unsplash.com/photo-1761470744784-3e1ab858ab5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGZhc2hpb24lMjBiYW5uZXJ8ZW58MXx8fHwxNzY1ODIzOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://images.unsplash.com/photo-1624736712409-4620d5765f45?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "NOVA COLEÇÃO\nURBANA",
       subtitle: "LANÇAMENTO",
       objectPosition: "object-top",
@@ -75,7 +75,7 @@ export function Hero() {
               <p className="text-sm sm:text-base tracking-widest mb-4 text-white/80">
                 {slides[currentSlide].subtitle}
               </p>
-              <h2 className="text-4xl sm:text-5xl lg:text-7xl mb-6 tracking-tight whitespace-pre-line">
+              <h2 className="text-white text-4xl sm:text-5xl lg:text-7xl mb-6 tracking-tight whitespace-pre-line">
                 {slides[currentSlide].title}
               </h2>
               <p className="text-base sm:text-lg text-white/70 mb-8 max-w-lg">
