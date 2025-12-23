@@ -1,6 +1,6 @@
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Heart } from "lucide-react";
 
-export function ProductCard({ product }) {
+export default function ProductCard({ product }) {
   return (
     <div className="group cursor-pointer">
       <div className="relative overflow-hidden bg-white/5 mb-4 aspect-[3/4]">

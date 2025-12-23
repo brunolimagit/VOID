@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
-import { ProductCard } from "./ProductCard";
+import  ProductCard from "./ProductCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function FeaturedCarousel() {
+export default function FeaturedCarousel() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const scrollContainerRef = useRef(null);
 
@@ -16,37 +16,37 @@ export function FeaturedCarousel() {
     },
     {
       id: 2,
-      name: "Camiseta Oversized White",
+      name: "Camiseta Oversized Black",
       price: 149.90,
-      image: "https://images.unsplash.com/photo-1668720618149-f1c00c1841e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlZXQlMjBzdHlsZSUyMHRzaGlydHxlbnwxfHx8fDE3NjU4MjIzODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://www.kacewear.com.br/cdn/shop/files/Camiseta_Boxy_Kace_x_Redragon_Preta_Masculino_Frente.jpg?v=1722461907",
       badge: "DESTAQUE",
     },
     {
       id: 3,
       name: "Jaqueta Urban Style",
       price: 399.90,
-      image: "https://images.unsplash.com/photo-1550948506-9a85c307d4a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGphY2tldCUyMGZhc2hpb258ZW58MXx8fHwxNzY1ODA4NjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://www.kacewear.com.br/cdn/shop/files/Jaqueta_Gola_Alta_Thermo_Fleece_Preta_Research_Kace_Bolso_Masculina.png?v=1742135659&width=939",
       badge: "DESTAQUE",
     },
     {
       id: 4,
-      name: "Tênis Street Classic",
+      name: "Tênis Streetwear",
       price: 499.90,
-      image: "https://images.unsplash.com/photo-1669671943625-e20799ee5f42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlZXR3ZWFyJTIwc25lYWtlcnN8ZW58MXx8fHwxNzY1NzQ1MDc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://acdn-us.mitiendanube.com/stores/001/155/809/products/image_20251216_162746_845-9c209c57ff9deb139b17659135879581-1024-1024.webp",
       badge: "NOVO",
     },
     {
       id: 5,
       name: "Moletom Cargo Black",
       price: 279.90,
-      image: "https://images.unsplash.com/photo-1624115507303-33758fbe3043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFjayUyMGhvb2RpZSUyMHN0cmVldHxlbnwxfHx8fDE3NjU4MjIzODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://www.kacewear.com.br/cdn/shop/files/Moletom_Oversized_Rise_Kace_Wear_x_Hideki_Preto_Masculino_Costas_2.png?v=1764066219&width=1096",
       badge: null,
     },
     {
       id: 6,
       name: "Camiseta Graphics Pro",
       price: 169.90,
-      image: "https://images.unsplash.com/photo-1668720618149-f1c00c1841e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHJlZXQlMjBzdHlsZSUyMHRzaGlydHxlbnwxfHx8fDE3NjU4MjIzODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "https://www.kacewear.com.br/cdn/shop/files/Camiseta_Boxy_Arcturus_Kace_x_Pitayaq_Detalhe_2.jpg?v=1719005961&width=939",
       badge: "SALE",
     },
   ];

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function Hero() {
+export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [

@@ -1,6 +1,6 @@
-import { ProductCard } from "./ProductCard";
+import  ProductCard  from "./ProductCard";
 
-export function ProductGrid() {
+export default function ProductGrid() {
   const products = [
     {
       id: 1,

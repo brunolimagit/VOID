@@ -1,7 +1,8 @@
-import { ShoppingCart, Search, Menu, User } from "lucide-react";
+import { ShoppingCart, Search, Menu, User, LineSquiggle } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export function Header() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -9,17 +10,19 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl sm:text-2xl tracking-wider">
+          <Link to={"/"} className="flex-shrink-0">
+            
+            < h1 className="text-xl sm:text-2xl tracking-wider"> 
+              
               LOGO<span className="text-white/50"> VOID</span>
             </h1>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-white hover:text-white/70 transition-colors">
-              Novidades
-            </a>
+            <Link to={"/page2"}  className="text-white hover:text-white/70 transition-colors">
+              Lançamentos
+            </Link>
             <a href="#" className="text-white hover:text-white/70 transition-colors">
               Masculino
             </a>

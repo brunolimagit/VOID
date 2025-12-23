@@ -1,4 +1,4 @@
-export function CategorySection() {
+export default function CategorySection() {
   const categories = [
     {
       title: "CAMISETAS",
