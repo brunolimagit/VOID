@@ -42,9 +42,10 @@ export default function Header() {
             <button className="text-white hover:text-white/70 transition-colors hidden sm:block">
               <Search size={20} />
             </button>
-            <button className="text-white hover:text-white/70 transition-colors hidden sm:block">
+            
+            <Link to={"/login"} className="text-white hover:text-white/70 transition-colors hidden sm:block">
               <User size={20} />
-            </button>
+            </Link>
             <button className="text-white hover:text-white/70 transition-colors relative">
               <ShoppingCart size={20} />
               <span className="absolute -top-2 -right-2 bg-white text-black text-xs w-5 h-5 rounded-full flex items-center justify-center">

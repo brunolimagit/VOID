@@ -6,6 +6,7 @@ import InicioPage from './pages/InicioPage.jsx';
 import Page2 from './pages/Page2.jsx';
 import './index.css'
 import './App.css'
+import LoginPage from './components/LoginPage.jsx';
 
 
 
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<InicioPage />} />
         <Route path="/page2" element={<Page2 />} />
+        <Route path="/login" element={<LoginPage />} />
       
       </Routes>
     </BrowserRouter>

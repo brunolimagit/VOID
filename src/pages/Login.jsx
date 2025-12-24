@@ -1,0 +1,13 @@
+
+import  Footer  from "../components/Footer"
+import Header from "../components/Header"
+import LoginPage from "../components/LoginPage"
+
+
+export default function Login (){
+return(
+    <div className="min-h-screen bg-black text-white">
+        <LoginPage/>
+    </div>
+)
+}
