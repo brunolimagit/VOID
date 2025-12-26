@@ -1,6 +1,6 @@
+import  Header  from "../components/Header";
 import  FeaturedCarousel from "../components/FeaturedCarousel";
 import  Footer  from "../components/Footer";
-import  Header  from "../components/Header";
 
 export default function page2(){
     return(

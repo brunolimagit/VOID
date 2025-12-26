@@ -65,7 +65,7 @@ const scroll = (direction) => {
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto mt-5">
         <div className="mb-8 sm:mb-12 flex flex-col text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-4">
             LANÇAMENTOS
