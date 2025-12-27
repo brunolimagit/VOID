@@ -1,15 +1,17 @@
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react";
-
+import {Link} from "react-router-dom"
+import logoVoid from "../assets/logo-voidd.png"
 export default function Footer() {
   return (
     <footer className="border-t border-white/10  bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand */}
-          <div>
-            <h3 className="text-xl mb-4 tracking-wider text-white/50">
-              LOGO<span className="text-white/50">VOID</span>
-            </h3>
+          <div >
+            <Link to={"/"} className="flex ml-15 mb-5">
+                       <img src={logoVoid} alt="" className="h-10  w-auto object-contain mt-10 text-[white/70]"  />
+                     </Link>
+           
             <p className="text-white/60 text-sm">
               Estilo urbano que define sua personalidade. Desde 2025.
             </p>

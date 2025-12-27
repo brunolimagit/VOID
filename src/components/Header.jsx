@@ -1,6 +1,7 @@
 import { ShoppingCart, Search, Menu, User, LineSquiggle } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logoVoid from "../assets/logo-voidd.png"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,28 +12,24 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to={"/"} className="flex-shrink-0">
-            
-            < h1 className="text-xl sm:text-2xl tracking-wider"> 
-              
-              LOGO<span className="text-white/50"> VOID</span>
-            </h1>
+            <img src={logoVoid} alt="" className="h-30 opacity-80  w-auto object-contain mt-10"  />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to={"/page2"}  className="text-white hover:text-white/70 transition-colors">
+            <Link to={"/page2"}  className="text-white hover:text-white/70 transition-colors text-lg">
               Lançamentos
             </Link>
-            <a href="#" className="text-white hover:text-white/70 transition-colors">
+            <a href="#" className="text-white hover:text-white/70 transition-colors text-lg">
               Masculino
             </a>
-            <a href="#" className="text-white hover:text-white/70 transition-colors">
+            <a href="#" className="text-white hover:text-white/70 transition-colors text-lg">
               Feminino
             </a>
-            <a href="#" className="text-white hover:text-white/70 transition-colors">
+            <a href="#" className="text-white hover:text-white/70 transition-colors text-lg">
               Acessórios
             </a>
-            <a href="#" className="text-white hover:text-white/70 transition-colors">
+            <a href="#" className="text-white hover:text-white/70 transition-colors text-lg">
               Sale
             </a>
           </nav>

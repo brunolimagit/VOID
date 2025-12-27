@@ -6,8 +6,10 @@ import LoginPage from "../components/LoginPage"
 
 export default function Login (){
 return(
-    <div className="min-h-screen bg-black text-white">
+    <div className=" bg-black text-white">
+        <Header/>
         <LoginPage/>
+        <Footer/>
     </div>
 )
 }

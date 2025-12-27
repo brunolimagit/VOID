@@ -24,8 +24,16 @@ export default function LoginPage() {
       console.log("LOGIN:", { email, password });
       navigate("/");
     } else {
-      console.log("CADASTRO:", { name, email, password });
-      navigate("/");
+      console.log("CADASTRO:", { name, cep, estado, rua, numero, email, password });
+      navigate("/login");
+    }
+  }
+
+  function handleNavigate(){
+    if(isLogin){
+      navigate("/")
+    }else{
+      setIsLogin(true)
     }
   }
 
@@ -40,14 +48,14 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white pt-20 px-4">
+    <div className="min-h-screen bg-black text-white sm:pt-24 px-4">
       <div className="max-w-md mx-auto">
         <button
-          onClick={() => navigate("/")}
+          onClick={handleNavigate}
           className="flex items-center gap-2 text-white/60 hover:text-white mb-8"
         >
           <ArrowLeft size={20} />
-          Voltar
+          {isLogin ? "Voltar" : "Voltar Para Login"}
         </button>
 
         <div className="bg-white/5 border border-white/10 rounded-lg p-8">
@@ -55,6 +63,7 @@ export default function LoginPage() {
             {isLogin ? "BEM-VINDO" : "CRIAR CONTA"}
           </h1>
 
+        
           <p className="text-white/60 mb-6">
             {isLogin
               ? "Entre com suas credenciais"
@@ -67,8 +76,8 @@ export default function LoginPage() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {!isLogin && (
-              <div className="flex flex-col gap-3">
-                <div>
+              <div>
+               <div className="flex flex-col gap-3">
                 <label className="block mb-2 text-lg">Nome Completo</label>
                 <div className="relative">
                   <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
@@ -179,7 +188,7 @@ export default function LoginPage() {
                   type="button"
                   onClick={handleForgotPassword}
                   className="text-sm text-white/60 hover:text-white"
-                >
+                  >
                   Esqueceu a senha?
                 </button>
               </div>
@@ -188,24 +197,25 @@ export default function LoginPage() {
             <button
               type="submit"
               className="w-full bg-white text-black py-3 rounded-lg"
-            >
+              >
               {isLogin ? "ENTRAR" : "CRIAR CONTA"}
             </button>
           </form>
 
-          <div className="mt-6 text-center">
+<div className="mt-6 text-center">
             <p className="text-white/60">
               {isLogin ? "Não tem uma conta?" : "Já tem uma conta?"}{" "}
               <button
                 onClick={() => setIsLogin(!isLogin)}
                 className="text-white underline"
-              >
+                >
                 {isLogin ? "Cadastre-se" : "Entrar"}
               </button>
             </p>
+           
           </div>
         </div>
-      </div>
-    </div>
-  );
+        </div>
+        </div>
+      );
 }
