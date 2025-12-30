@@ -7,6 +7,8 @@ import Page2 from './pages/Page2.jsx';
 import './index.css'
 import './App.css'
 import LoginPage from './components/LoginPage.jsx';
+import { CheckoutPage } from './components/CheckoutPage.jsx';
+import { CartPage } from './components/CartPage.jsx';
 
 
 
@@ -17,6 +19,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<InicioPage />} />
         <Route path="/page2" element={<Page2 />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/pagamento" element={<CheckoutPage />} />
+      
+        <Route path="/cart" element={<CartPage />} />
       
       </Routes>
     </BrowserRouter>
