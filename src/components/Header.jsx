@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to={"/"} className="flex-shrink-0 flex gap-4">
-          <p className="text-[35px] flex  font-bold">VOID</p>
+          <p className="text-[35px] flex  font-bold">D U S K</p>
             <img src={logoVoid} alt="" className="h-10 opacity-80  w-auto object-contain mt-1 "  />
           </Link>
 

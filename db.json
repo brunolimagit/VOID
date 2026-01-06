@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin VOID",
+      "email": "admin@void.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "ed6e",
+      "email": "bru_jefferson@hotmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "8f68",
+      "email": "bru_jefferson@hotmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "afab",
+      "email": "lucasmelo@gmail.com",
+      "password": "191010"
+    },
+    {
+      "id": "9b55",
+      "email": "bru_jefferson@hotmail.com",
+      "password": "123"
+    },
+    {
+      "id": "776c",
+      "email": "bru_jefferson@hotmail.com",
+      "password": "1"
+    },
+    {
+      "id": "da2a",
+      "name": "luva",
+      "email": "bru_jefferson@hotmail.com",
+      "password": "909090",
+      "role": "user"
+    },
+    {
+      "id": "f3de",
+      "name": "patricia",
+      "email": "patylima@email.com",
+      "password": "Brunolima10#",
+      "role": "user"
+    },
+    {
+      "id": "eee9",
+      "name": "patricia",
+      "email": "paty@email.com",
+      "password": "patylima10#",
+      "role": "user"
+    },
+    {
+      "id": "3f07",
+      "name": "maria",
+      "email": "maria@email.com",
+      "password": "maria1010",
+      "role": "user"
+    }
+  ],
+  "products": []
+}

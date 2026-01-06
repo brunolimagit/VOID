@@ -9,6 +9,8 @@ import './App.css'
 import LoginPage from './components/LoginPage.jsx';
 import { CheckoutPage } from './components/CheckoutPage.jsx';
 import { CartPage } from './components/CartPage.jsx';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -24,6 +26,11 @@ createRoot(document.getElementById('root')).render(
         <Route path="/cart" element={<CartPage />} />
       
       </Routes>
+       <ToastContainer
+      position="top-right"
+      autoClose={3000}
+      theme="dark"
+    />
     </BrowserRouter>
   </StrictMode>,
 )
